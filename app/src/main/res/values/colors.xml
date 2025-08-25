@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors (60%) - Dark gradient backgrounds -->
+    <color name="primary_dark">#1A1B2E</color>
+    <color name="primary_medium">#16213E</color>
+    <color name="primary_light">#2D4A6B</color>
+    <color name="primary_gradient_start">#1A1B2E</color>
+    <color name="primary_gradient_end">#2D4A6B</color>
+
+    <!-- Secondary Colors (30%) - Purple tones for cards -->
+    <color name="secondary_dark">#533A7B</color>
+    <color name="secondary_medium">#6A4C93</color>
+    <color name="secondary_light">#8B5FBF</color>
+
+    <!-- Accent Colors (10%) - Bright highlights -->
+    <color name="accent_cyan">#00D4FF</color>
+    <color name="accent_pink">#FF6B9D</color>
+    <color name="accent_yellow">#FFD93D</color>
+    <color name="accent_purple">#9D4EDD</color>
+    <color name="accent_white">#FFFFFF</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B0B0B0</color>
+    <color name="text_hint">#6B6B6B</color>
+    <color name="text_dark">#1E232C</color>
+
+    <!-- Background Colors -->
+    <color name="background_dark">#0F1419</color>
+    <color name="card_background">#1E1E2E</color>
+    <color name="card_background_light">#2A2A3A</color>
+
+    <!-- Ellipse/Effect Colors (for your visual effects) -->
+    <color name="ellipse_purple_1">#4D533A7B</color>
+    <color name="ellipse_purple_2">#3D6A4C93</color>
+    <color name="ellipse_cyan">#3D00D4FF</color>
+    <color name="ellipse_pink">#3DFF6B9D</color>
+
+    <!-- Status Colors -->
+    <color name="success_green">#4CAF50</color>
+    <color name="error_red">#F44336</color>
+    <color name="warning_orange">#FF9800</color>
+
+    <!-- Transparent -->
+    <color name="transparent">#00000000</color>
+</resources>

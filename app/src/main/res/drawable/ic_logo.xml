@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="95dp"
+    android:height="85dp"
+    android:viewportWidth="95"
+    android:viewportHeight="85">
+    <path
+        android:pathData="M56.4004 34.8L51.7873 43L47.1694 51.2L42.5515 43V42.9952L47.1694 34.8L51.7873 26.6L56.4004 34.8Z"
+        android:fillColor="#EBEBEB"
+        android:strokeColor="#000000"
+        android:strokeMiterLimit="10"/>
+    <path
+        android:pathData="M61.0183 26.6L56.4004 34.8L51.7873 26.6L47.1694 18.4L42.5515 10.2L47.1694 2L51.7873 10.1952L56.4004 18.3952V18.4L61.0183 26.6Z"
+        android:fillColor="#EBEBEB"
+        android:strokeColor="#000000"
+        android:strokeMiterLimit="10"/>
+    <path
+        android:pathData="M37.9336 34.7999L33.3205 43L37.9336 51.2L42.5515 59.3999V59.4048L37.9384 67.6L28.7026 83.9999H1L5.6179 75.7999H24.0847L28.6978 67.6H28.7026L33.3157 59.3999L28.7026 51.2L24.0847 43L28.7026 34.7999L37.9384 18.4L42.5515 10.2L47.1694 18.4L42.5515 26.6L37.9384 34.7999H37.9336Z"
+        android:fillColor="#EBEBEB"
+        android:strokeColor="#000000"
+        android:strokeMiterLimit="10"/>
+    <path
+        android:pathData="M24.0847 59.3999L19.4668 67.6L14.8489 75.7999H5.61792L10.2358 67.6L14.8489 59.3999L19.4668 51.2L24.0847 59.3999Z"
+        android:fillColor="#EBEBEB"
+        android:strokeColor="#000000"
+        android:strokeMiterLimit="10"/>
+    <path
+        android:pathData="M70.254 26.6L65.6361 34.8L61.0182 26.6L65.6361 18.4L70.254 26.6Z"
+        android:fillColor="#EBEBEB"
+        android:strokeColor="#000000"
+        android:strokeMiterLimit="10"/>
+    <path
+        android:pathData="M93.3387 84.0001H37.9384L42.5515 75.8L47.1693 67.6001L51.7872 59.4001L56.4003 51.2001L61.0182 59.4001L51.7872 75.8H79.485L74.8671 67.6001L70.254 59.4049V59.4001L65.6361 51.2001L61.0182 43.0001L65.6361 34.8L70.254 42.9953V43.0001L74.8719 51.2001L79.485 59.4001H79.4898L84.1029 67.6001H84.1077L88.7208 75.8L93.3387 84.0001Z"
+        android:fillColor="#EBEBEB"
+        android:strokeColor="#000000"
+        android:strokeMiterLimit="10"/>
+</vector>
