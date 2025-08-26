@@ -1,8 +1,9 @@
-package com.swayactive.activities
+//package com.swayactive.activities
+package com.example.swayactive.activities
 
-import android.content.Intent
+//import android.content.Intent
 import android.os.Bundle
-import android.widget.LinearLayout
+//import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.example.swayactive.R
 

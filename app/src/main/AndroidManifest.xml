@@ -50,7 +50,7 @@
 
         <!-- Add the new OnboardingWelcomeActivity declaration with the corrected package name -->
         <activity
-            android:name="com.swayactive.activities.OnboardingWelcomeActivity"
+            android:name=".activities.OnboardingWelcomeActivity"
             android:exported="false" />
 
     </application>

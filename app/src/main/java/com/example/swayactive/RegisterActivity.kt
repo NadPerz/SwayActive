@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.swayactive.R
 // Corrected import statement to resolve the error.
-import com.swayactive.activities.OnboardingWelcomeActivity
+import com.example.swayactive.activities.OnboardingWelcomeActivity
 
 class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
