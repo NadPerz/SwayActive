@@ -44,4 +44,7 @@
     <dimen name="ellipse_medium">200dp</dimen>
     <dimen name="ellipse_large">300dp</dimen>
     <dimen name="ellipse_extra_large">400dp</dimen>
+
+    <!-- In dimens.xml -->
+    <dimen name="otp_box_size">50dp</dimen>
 </resources>

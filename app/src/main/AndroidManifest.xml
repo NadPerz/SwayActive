@@ -28,5 +28,30 @@
             android:name=".activities.LoginActivity"
             android:exported="false" />
 
+        <!-- Add the new RegisterActivity declaration -->
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:exported="false" />
+
+        <!-- Add the new ForgotPasswordActivity declaration -->
+        <activity
+            android:name=".activities.ForgotPasswordActivity"
+            android:exported="false" />
+
+        <!-- Add the new OtpVerificationActivity declaration -->
+        <activity
+            android:name=".activities.OtpVerificationActivity"
+            android:exported="false" />
+
+        <!-- Add the new CreatePasswordActivity declaration -->
+        <activity
+            android:name=".activities.CreatePasswordActivity"
+            android:exported="false" />
+
+        <!-- Add the new OnboardingWelcomeActivity declaration with the corrected package name -->
+        <activity
+            android:name="com.swayactive.activities.OnboardingWelcomeActivity"
+            android:exported="false" />
+
     </application>
 </manifest>

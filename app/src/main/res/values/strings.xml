@@ -21,24 +21,34 @@
     <string name="register_now">Register Now</string>
     <string name="already_have_account">Already have an account? </string>
     <string name="login_now">Login Now</string>
+    <string name="register_title">Hello! Register to get started</string>
+    <string name="username">Username</string>
+
+    <!-- Forgot password -->
+    <string name="forgot_password_title">Forgot Password?</string>
+    <string name="forgot_password_desc">Don\'t worry! It occurs. Please enter the email address linked with your account.</string>
+    <string name="back_button">Back</string>
+    <string name="Send_Code">Send Code</string>
 
     <!-- OTP Verification -->
     <string name="otp_verification">OTP Verification</string>
     <string name="enter_verification_code">Enter the verification code we just sent on your email address.</string>
     <string name="verify">Verify</string>
-    <string name="resend_code">Resend Code</string>
+    <string name="resend_code">Resend</string>
+    <string name="Didnot_received_code">Didn’t received code? </string>
+
 
     <!-- Password Reset -->
     <string name="reset_password">Reset Password</string>
-    <string name="enter_email_reset">Enter your email address to reset your password</string>
-    <string name="send_code">Send Code</string>
+    <string name="caption">Your new password must be unique from those previously used.</string>
+    <string name="new_password">new password</string>
     <string name="create_new_password">Create new password</string>
     <string name="password_changed">Password Changed!</string>
     <string name="back_to_login">Back to Login</string>
 
     <!-- Onboarding Strings -->
     <string name="start_your_fitness_odyssey">Start your\nFitness Odyssey</string>
-    <string name="start_your_fitness_journey">Start your fitness Journey with us. This is exciting!</string>
+    <string name="start_your_fitness_journey">Start your fitness journey \nwith our app guidance and support</string>
     <string name="next">Next</string>
     <string name="what_is_your_weight">What is your\nweight?</string>
     <string name="kg">kg</string>
@@ -102,4 +112,9 @@
     <string name="close">Close</string>
     <string name="done">Done</string>
     <string name="skip">Skip</string>
+    <string name="curved_arrow">curve arrow</string>
+    <string name="onboarding_curved_arrow">Curved Arrow</string>
+    <string name="onboarding_background">michel philips</string>
+    <string name="onboarding_button_arrow_left">Left Arrow Button</string>
+    <string name="onboarding_button_next_arrows">Next Arrows Button</string>
 </resources>

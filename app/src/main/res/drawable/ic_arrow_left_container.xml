@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- The white circular background -->
+    <item>
+        <shape android:shape="oval">
+            <size
+                android:width="52dp"
+                android:height="52dp" />
+            <solid android:color="#FFFFFF" />
+        </shape>
+    </item>
+    <!-- The arrow icon, centered within the circle -->
+    <item
+        android:drawable="@drawable/ic_next_arrow"
+        android:width="10dp"
+        android:height="18dp"
+        android:gravity="center"
+        android:tint="#524A4A" />
+</layer-list>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_splash"
+    tools:context=".activities.OtpVerificationActivity">
+
+    <!-- Top decorative element (same as other screens) -->
+    <View
+        android:id="@+id/ellipseEffect1"
+        android:layout_width="@dimen/ellipse_large"
+        android:layout_height="@dimen/ellipse_large"
+        android:layout_marginStart="-100dp"
+        android:layout_marginTop="-50dp"
+        android:background="@drawable/ellipse_effect_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- A different background effect for variety -->
+    <View
+        android:id="@+id/ellipseEffect"
+        android:layout_width="432dp"
+        android:layout_height="480dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="576dp"
+        android:background="@drawable/ellipse_effect_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Main Content Container (centered) -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/padding_extra_large"
+        android:paddingEnd="@dimen/padding_extra_large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- "OTP Verification" Title -->
+        <TextView
+            android:id="@+id/tvOtpTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/otp_verification"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_size_title"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/margin_medium"/>
+
+        <!-- Description Text -->
+        <TextView
+            android:id="@+id/tvOtpDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_verification_code"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_size_small"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/margin_extra_large"/>
+
+        <!-- OTP Input Fields (LinearLayout for multiple EditTexts) -->
+        <LinearLayout
+            android:id="@+id/otpContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/margin_huge">
+            <!-- You would typically add four separate EditText views here for the OTP digits -->
+            <EditText
+                android:id="@+id/otp1"
+                android:layout_width="@dimen/otp_box_size"
+                android:layout_height="@dimen/otp_box_size"
+                android:background="@drawable/rounded_edittext_bg"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textSize="@dimen/text_size_title"
+                android:textColor="@color/text_primary"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:cursorVisible="false"/>
+            <EditText
+                android:id="@+id/otp2"
+                android:layout_width="@dimen/otp_box_size"
+                android:layout_height="@dimen/otp_box_size"
+                android:background="@drawable/rounded_edittext_bg"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textSize="@dimen/text_size_title"
+                android:textColor="@color/text_primary"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:cursorVisible="false"/>
+            <EditText
+                android:id="@+id/otp3"
+                android:layout_width="@dimen/otp_box_size"
+                android:layout_height="@dimen/otp_box_size"
+                android:background="@drawable/rounded_edittext_bg"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textSize="@dimen/text_size_title"
+                android:textColor="@color/text_primary"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:cursorVisible="false"/>
+            <EditText
+                android:id="@+id/otp4"
+                android:layout_width="@dimen/otp_box_size"
+                android:layout_height="@dimen/otp_box_size"
+                android:background="@drawable/rounded_edittext_bg"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textSize="@dimen/text_size_title"
+                android:textColor="@color/text_primary"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:cursorVisible="false"/>
+        </LinearLayout>
+
+        <!-- Verify Button -->
+        <Button
+            android:id="@+id/btnVerify"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/verify"
+            android:backgroundTint="@color/accent_white"
+            android:textColor="@color/text_dark"
+            app:cornerRadius="@dimen/button_corner_radius"
+            android:layout_marginBottom="@dimen/margin_huge"/>
+
+        <!-- "Didn't receive code?" text -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Didnot_received_code"
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_marginEnd="@dimen/margin_small"/>
+            <TextView
+                android:id="@+id/tvResend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/resend_code"
+                android:textColor="@color/accent_white"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

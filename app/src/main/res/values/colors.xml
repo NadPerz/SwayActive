@@ -42,5 +42,7 @@
     <color name="warning_orange">#FF9800</color>
 
     <!-- Transparent -->
+    <!-- In colors.xml -->
+    <color name="semi_transparent_black">#A1000000</color>
     <color name="transparent">#00000000</color>
 </resources>

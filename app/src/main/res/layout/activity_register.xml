@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,9 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_gradient_splash"
-    tools:context=".activities.LoginActivity">
+    tools:context=".activities.RegisterActivity">
 
-    <!-- Top decorative element (same as splash screen) -->
+    <!-- Top decorative element (same as login screen) -->
     <View
         android:id="@+id/ellipseEffect1"
         android:layout_width="@dimen/ellipse_large"
@@ -53,18 +52,32 @@
             android:contentDescription="@string/app_name"
             android:src="@drawable/ic_logo" />
 
-        <!-- Welcome Back Title -->
+        <!-- "Hello! Register to get started" Title -->
         <TextView
-            android:id="@+id/tvWelcomeBack"
+            android:id="@+id/tvRegisterTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
-            android:text="@string/welcome_back"
+            android:text="@string/register_title"
             android:textColor="@color/text_primary"
             android:textSize="@dimen/text_size_title"
             android:textStyle="bold"
             android:gravity="center"
             android:layout_marginBottom="@dimen/margin_huge"/>
+
+        <!-- Username Input Field -->
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:background="@drawable/rounded_edittext_bg"
+            android:paddingStart="@dimen/padding_large"
+            android:paddingEnd="@dimen/padding_large"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:hint="@string/username"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="@dimen/margin_medium"/>
 
         <!-- Email Input Field -->
         <EditText
@@ -92,34 +105,34 @@
             android:textColorHint="@color/text_secondary"
             android:hint="@string/password"
             android:inputType="textPassword"
-            android:layout_marginBottom="@dimen/margin_small"/>
+            android:layout_marginBottom="@dimen/margin_medium"/>
 
-        <!-- Forgot Password Link -->
-        <TextView
-            android:id="@+id/tvForgotPassword"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:text="@string/forgot_password"
-            android:textColor="@color/accent_white"
-            android:textSize="@dimen/text_size_small"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:layout_marginBottom="@dimen/margin_extra_large"/>
-
-        <!-- Login Button -->
-        <Button
-            android:id="@+id/btnLogin"
+        <!-- Confirm Password Input Field -->
+        <EditText
+            android:id="@+id/etConfirmPassword"
             android:layout_width="match_parent"
             android:layout_height="@dimen/button_height"
-            android:text="@string/login"
+            android:background="@drawable/rounded_edittext_bg"
+            android:paddingStart="@dimen/padding_large"
+            android:paddingEnd="@dimen/padding_large"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:layout_marginBottom="@dimen/margin_extra_large"/>
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/register"
             android:backgroundTint="@color/accent_white"
             android:textColor="@color/text_dark"
             app:cornerRadius="@dimen/button_corner_radius"
             android:layout_marginBottom="@dimen/margin_huge"/>
 
-        <!-- "Don't have an account?" text -->
+        <!-- "Already have an account?" text -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -130,16 +143,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/dont_have_account"
+                android:text="@string/already_have_account"
                 android:textColor="@color/text_secondary"
                 android:textSize="@dimen/text_size_medium"
                 android:layout_marginEnd="@dimen/margin_small"/>
 
             <TextView
-                android:id="@+id/tvRegisterNow"
+                android:id="@+id/tvLoginNow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/register_now"
+                android:text="@string/login_now"
                 android:textColor="@color/accent_white"
                 android:textSize="@dimen/text_size_medium"
                 android:textStyle="bold"
@@ -147,7 +160,6 @@
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"/>
         </LinearLayout>
-
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
