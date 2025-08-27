@@ -12,8 +12,8 @@
     <!-- The arrow icon, centered within the circle -->
     <item
         android:drawable="@drawable/ic_next_arrow"
-        android:width="10dp"
-        android:height="18dp"
+        android:width="20dp"
+        android:height="20dp"
         android:gravity="center"
-        android:tint="#524A4A" />
+        android:tint="#000000" />
 </layer-list>

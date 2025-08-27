@@ -48,9 +48,14 @@
             android:name=".activities.CreatePasswordActivity"
             android:exported="false" />
 
-        <!-- Add the new OnboardingWelcomeActivity declaration with the corrected package name -->
+        <!-- OnboardingWelcomeActivity declaration -->
         <activity
             android:name=".activities.OnboardingWelcomeActivity"
+            android:exported="false" />
+
+<!--         OnboardingWeightActivity declaration -->
+        <activity
+            android:name=".activities.OnboardingWeightActivity"
             android:exported="false" />
 
     </application>

@@ -41,6 +41,12 @@
     <color name="error_red">#F44336</color>
     <color name="warning_orange">#FF9800</color>
 
+
+    <color name="text_primary2">#2D2D3A</color>
+    <color name="text_secondary2">#666666</color>
+    <color name="background_card">#E8E8F0</color>
+    <color name="background_selector">#F5F5F7</color>
+
     <!-- Transparent -->
     <!-- In colors.xml -->
     <color name="semi_transparent_black">#A1000000</color>
