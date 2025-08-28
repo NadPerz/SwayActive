@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/dark_background"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    tools:context="com.example.swayactive.activities.DashboardActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -314,54 +315,70 @@
 
         </LinearLayout>
 
-        <!-- Bottom Navigation Dots -->
+        <!-- Bottom Navigation Bar -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="80dp"
             android:orientation="horizontal"
-            android:gravity="center"
-            android:background="@drawable/bottom_nav_background">
+            android:gravity="center_vertical"
+            android:background="@drawable/bottom_nav_background"
+            android:paddingHorizontal="24dp">
 
-            <!-- Grid Icon -->
+            <!-- Left Side - Grid Icon -->
             <ImageView
                 android:id="@+id/gridNavIcon"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:src="@drawable/ic_grid"
                 android:background="@drawable/circular_background_white"
-                android:padding="8dp"
-                android:layout_marginEnd="16dp" />
+                android:padding="12dp" />
 
-            <!-- Navigation Dots -->
+            <!-- Center Navigation Track -->
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
                 android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:background="@drawable/nav_track_background"
+                android:layout_marginHorizontal="20dp">
 
-                <View
-                    android:layout_width="8dp"
-                    android:layout_height="8dp"
+                <!-- Navigation Icons -->
+                <ImageView
+                    android:id="@+id/navIcon1"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_calendar"
+                    android:background="@drawable/nav_dot_inactive"
+                    android:padding="4dp"
+                    android:layout_marginHorizontal="8dp" />
+
+                <ImageView
+                    android:id="@+id/navIcon2"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_chart"
                     android:background="@drawable/nav_dot_active"
-                    android:layout_marginHorizontal="4dp" />
+                    android:padding="6dp"
+                    android:layout_marginHorizontal="8dp" />
 
-                <View
-                    android:layout_width="8dp"
-                    android:layout_height="8dp"
+                <ImageView
+                    android:id="@+id/navIcon3"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_settings"
                     android:background="@drawable/nav_dot_inactive"
-                    android:layout_marginHorizontal="4dp" />
+                    android:padding="4dp"
+                    android:layout_marginHorizontal="8dp" />
 
-                <View
-                    android:layout_width="8dp"
-                    android:layout_height="8dp"
+                <ImageView
+                    android:id="@+id/navIcon4"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_profile"
                     android:background="@drawable/nav_dot_inactive"
-                    android:layout_marginHorizontal="4dp" />
-
-                <View
-                    android:layout_width="8dp"
-                    android:layout_height="8dp"
-                    android:background="@drawable/nav_dot_inactive"
-                    android:layout_marginHorizontal="4dp" />
+                    android:padding="4dp"
+                    android:layout_marginHorizontal="8dp" />
 
             </LinearLayout>
 

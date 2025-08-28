@@ -22,11 +22,16 @@
             </intent-filter>
         </activity>
 
-        <!-- LoginActivity declaration must be present.
-             Use the correct package path here. -->
+        <!-- LoginActivity declaration -->
         <activity
             android:name=".activities.LoginActivity"
             android:exported="false" />
+
+        <!-- Add the MainDashboardActivity declaration -->
+        <activity
+            android:name=".activities.MainDashboardActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
 
         <!-- Add the new RegisterActivity declaration -->
         <activity
@@ -53,7 +58,7 @@
             android:name=".activities.OnboardingWelcomeActivity"
             android:exported="false" />
 
-<!--         OnboardingWeightActivity declaration -->
+        <!-- OnboardingWeightActivity declaration -->
         <activity
             android:name=".activities.OnboardingWeightActivity"
             android:exported="false" />

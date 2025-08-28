@@ -11,6 +11,7 @@ class OnboardingHeightActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.onboarding_height)
+        supportActionBar?.hide()
 
         setupClickListeners()
     }
@@ -21,11 +22,14 @@ class OnboardingHeightActivity : AppCompatActivity() {
             finish() // Go back to previous activity
         }
 
-        // Next button click listener
+        // Next/Start button click listener - Navigate to MainDashboardActivity
         findViewById<LinearLayout>(R.id.btnNext).setOnClickListener {
-            // Navigate to next onboarding screen
-            // val intent = Intent(this, NextOnboardingActivity::class.java)
-            // startActivity(intent)
+            // Navigate to the main dashboard (assuming this is the last onboarding step)
+            val intent = Intent(this, MainDashboardActivity::class.java)
+            startActivity(intent)
+
+            // Clear the activity stack so user can't go back to onboarding
+            finishAffinity()
         }
     }
 }
