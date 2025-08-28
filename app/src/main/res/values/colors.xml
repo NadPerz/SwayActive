@@ -51,4 +51,34 @@
     <!-- In colors.xml -->
     <color name="semi_transparent_black">#A1000000</color>
     <color name="transparent">#00000000</color>
+
+
+
+    <color name="dark_background">#1E1E2E</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- Accent Colors -->
+    <color name="pink_accent">#FF6B9D</color>
+    <color name="yellow_accent">#FFD93D</color>
+    <color name="blue_accent">#4A90E2</color>
+
+    <!-- Text Colors -->
+    <color name="gray_text">#8E8E93</color>
+    <color name="light_gray">#C7C7CC</color>
+    <color name="dark_gray">#48484A</color>
+
+    <!-- Background Colors -->
+<!--    <color name="card_background">#2C2C3E</color>-->
+    <color name="semi_transparent_white">#80FFFFFF</color>
+<!--    <color name="semi_transparent_black">#80000000</color>-->
+
+    <!-- Status Colors -->
+<!--    <color name="success_green">#34C759</color>-->
+<!--    <color name="warning_orange">#FF9500</color>-->
+<!--    <color name="error_red">#FF3B30</color>-->
+
+    <!-- Navigation Colors -->
+    <color name="nav_active">#FFFFFF</color>
+    <color name="nav_inactive">#6C6C80</color>
 </resources>

@@ -6,11 +6,11 @@ import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.example.swayactive.R
 
-class OnboardingWeightActivity : AppCompatActivity() {
+class OnboardingHeightActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.onboarding_weight)
+        setContentView(R.layout.onboarding_height)
 
         setupClickListeners()
     }
@@ -23,9 +23,9 @@ class OnboardingWeightActivity : AppCompatActivity() {
 
         // Next button click listener
         findViewById<LinearLayout>(R.id.btnNext).setOnClickListener {
-//             Navigate to next onboarding screen
-             val intent = Intent(this, OnboardingHeightActivity::class.java)
-             startActivity(intent)
+            // Navigate to next onboarding screen
+            // val intent = Intent(this, NextOnboardingActivity::class.java)
+            // startActivity(intent)
         }
     }
 }
