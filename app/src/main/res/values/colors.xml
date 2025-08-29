@@ -81,4 +81,7 @@
     <!-- Navigation Colors -->
     <color name="nav_active">#FFFFFF</color>
     <color name="nav_inactive">#6C6C80</color>
+    <color name="light_blue">#00BFFF</color>
+
+
 </resources>

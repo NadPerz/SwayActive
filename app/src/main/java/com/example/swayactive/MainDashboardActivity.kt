@@ -1,5 +1,6 @@
 package com.example.swayactive.activities
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.view.View
@@ -16,6 +17,7 @@ import com.github.mikephil.charting.data.LineData
 import com.github.mikephil.charting.data.LineDataSet
 import de.hdodenhof.circleimageview.CircleImageView
 import java.util.*
+
 
 class MainDashboardActivity : AppCompatActivity() {
 
@@ -154,20 +156,9 @@ class MainDashboardActivity : AppCompatActivity() {
     }
 
     private fun startWarmupActivity() {
-        // Update button state
-        startWarmupButton.text = "Starting..."
-        startWarmupButton.isEnabled = false
-
-        Toast.makeText(this, "Starting WarmUp activity...", Toast.LENGTH_SHORT).show()
-
-        // Simulate starting activity delay
-        startWarmupButton.postDelayed({
-            startWarmupButton.text = "Start"
-            startWarmupButton.isEnabled = true
-            // TODO: Start workout activity
-            // val intent = Intent(this, WorkoutActivity::class.java)
-            // startActivity(intent)
-        }, 2000)
+        // Navigate to WorkoutTimerActivity
+        val intent = Intent(this, WorkoutTimerActivity::class.java)
+        startActivity(intent)
     }
 
     override fun onResume() {

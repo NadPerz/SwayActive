@@ -33,6 +33,12 @@
             android:exported="false"
             android:screenOrientation="portrait" />
 
+        <!-- Add the WorkoutTimerActivity declaration -->
+        <activity
+            android:name=".activities.WorkoutTimerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
         <!-- Add the new RegisterActivity declaration -->
         <activity
             android:name=".activities.RegisterActivity"
@@ -66,6 +72,11 @@
         <activity
             android:name=".activities.OnboardingHeightActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".activities.WorkoutCompleteActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
 
     </application>
 </manifest>
